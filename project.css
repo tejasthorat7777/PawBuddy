@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body
+{   
+    height: 100%;
+    width: 100%;
+    background-color: rgb(200, 191, 173);
+}
+p
+{
+    font-size: 45px;
+}
+.nav
+{   
+    height: 125px;
+}
+ul
+{     
+    background-color: transparent;
+    overflow: hidden;
+    list-style-type: none;
+    margin-left: 15px;
+    padding: 0;
+}
+li a
+{       
+    display: block;
+    text-decoration: none;
+    color:black;
+    padding: 14px 12px;
+    text-align: center;
+    margin-top: 50px;
+}
+li input[type="text"]
+{   
+    display: block;
+    padding: 9px 30px;
+    margin-top: 60px;
+    margin-left: 980px;
+    background-image: url('search.png');
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 25px 25px;
+    border-radius: 50px;
+    border-style:none ;
+}
+li:hover a
+{   
+    border-radius: 50px;
+    background-color:white;
+    opacity: 0.8;
+}
+li .search:focus
+{
+    background-color: rgb(200, 195, 184);
+}
+li:hover input
+{
+    border: 1px solid black;
+    
+}
+li
+{
+    float: left;
+}
+.logo   
+{   
+    position: absolute;
+    margin-left: 380px;
+    height: 130px;
+    width: 150px;
+    transition: 2s;
+}
+.logo:hover
+{
+    scale: 1.2;
+}
+.search
+{
+    margin-left: 450px;
+}
+.box
+{   
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    height: 350px;
+    width: 100%;
+    padding: 0px 50px;
+}
+.box
+{
+    overflow: hidden;
+}
+.box1:hover img
+{
+    scale: 1.1;
+    transition: 2s;
+}
+.box1 img
+{   
+    height: 100%;
+    width: 100%;
+}
+.box2 img
+{   
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    
+}
+.heading
+{
+    padding: 15px;
+    text-align: center;
+}
+.heading h1
+{
+    font-size: 150px;
+    position: relative;
+    color: white;
+}
+.heading h1::before
+{   
+    content: 'Go Shop for Doogy';
+    position: absolute;
+    color: black;
+    top: -5px;
+    left: 125px;
+}
+.product-list
+{   
+    margin:10px 0px;
+    position: relative;
+    display:flex;
+    margin: 20px 50px;
+    text-align: center;
+    height: 250px;
+    height: 100px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.product-list img
+{
+    height: 100px;
+}
+.dog1
+{   
+    position: relative;
+    border-radius: 50%;
+    background-color:   #debf9b;
+    border: 1px solid black;
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.dog1:hover
+{     
+    box-shadow: 0 4px 8px 0 rgb(11, 11, 11), 0 6px 20px 0 rgb(3, 3, 3);
+    background-color: dda15e;
+}
+.dog1:hover .dog11{
+    display: block;
+    z-index: 0;
+}
+.dog-name
+{   
+    margin: 10px 0px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    border-radius: 25px;
+}
+.dog11
+{       
+    display: none;
+    height: 50px;
+    width: 100px;
+    color: black;
+    background-color: #e2af75;
+    border: 1px solid rgb(46, 45, 45);
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgb(57, 57, 57), 0 6px 20px 0 rgb(76, 76, 76);
+}
+.dog11:hover
+{
+    background-color: rgb(96, 94, 94);
+}
+.items
+{       
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+}
+.item1
+{  
+    height: 250px;
+    width: 200px;
+    background-color: rgb(204, 188, 156);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: glow 1s alternate infinite;
+}
+.All
+{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    padding: 15px;
+    gap: 50px 50px;
+    margin-top: 50px;
+    margin-left: 650px;
+}
+.img_grid
+{
+    height: 200px;
+    width: 200px;
+}
+.img_grid:hover
+{
+    background-color: #cd9d6d;
+}
+.img_grid img{   
+
+    height: 200px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+.ptname
+{
+   margin-top: 2px;
+   height: 50px;
+    width: 200px;
+    background-color:f5ebe0;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 20px;
+}
+#side_image
+{
+    position: absolute;
+    left: -150px;
+    top: 50px;
+    filter: drop-shadow(0 0 50px #d4a373);
+    animation: glow 1s alternate infinite; 
+}
+@keyframes glow {
+
+    0%{
+        filter: drop-shadow(0 0 10px #d9a26c);
+    }
+    50%
+    {
+        fill: drop-shadow(0 0 25px #cfa173);
+    }
+    100%
+    {
+        filter: drop-shadow(0 0 30px #cd9d6d);
+    }    
+}
+.chart
+{   
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    width: 100%;
+    background-color: rgb(200, 191, 173);
+}
+.chart img
+{   
+    margin: 0px 55px;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(204, 188, 156);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.chart img:hover
+{
+    background-color: rgb(0, 0, 0,0.3);
+}
+.footer
+{   
+    margin-top: 50px;
+    height: 65%;
+    width: 100%;
+    background-color: rgb(200, 191, 173);;
+}
+.footer1
+{   
+    display: flex;
+    height: 55%;
+    width: 100%;
+    justify-content: space-between;
+}
+.footer1-1
+{   
+    display: block;
+    padding: 20px;
+    height: 100%;
+    width: 20%;
+    margin: 0px 0px 0px 35px;
+
+}.company
+{
+    font-size: 25px;
+}
+.company-1 a
+{
+    text-decoration: none;
+    color: rgb(4, 4, 4);
+}
+.company-1
+{
+    line-height: 30px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.footer2
+{   
+    display: flex;
+    height: 25%;
+    width: 100%;
+}
+.bonus
+{   
+    padding: 5px;
+    height: 100%;
+    width: 50%;
+    line-height: 55px;
+}
+.bonus label
+{   
+    margin-left: 45px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+.bonus input
+{   
+    margin-left: 200px;
+    font-size: 15px;
+    padding:10px;
+}
+.bonus button
+{   
+    margin-left: 15px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: black;
+}
+.media
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 100%;
+    width: 50%;
+}
+.media img
+{   
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
+.footer3
+{
+    width: 100%;
+    height: 18%;
+    padding: 25px;
+}
+.copyright
+{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+}

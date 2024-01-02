@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(200, 191, 173);
+}
+.nav
+{   
+    height: 120px;
+    border-bottom: 1px solid black;
+}
+header ul
+{     
+    background-color: transparent;
+    overflow: hidden;
+    list-style-type: none;
+    margin-left: 15px;
+    padding: 0;
+}
+header li a
+{       
+    display: block;
+    text-decoration: none;
+    color:black;
+    padding: 14px 12px;
+    text-align: center;
+    margin-top: 50px;
+}
+header li input[type="text"]
+{   
+    
+    display: block;
+    padding: 9px 30px;
+    margin-top: 60px;
+    margin-left: 980px;
+    background-image: url('search.png');
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background-size: 25px 25px;
+    border-radius: 50px;
+    border-style:none ;
+    border: 1px solid black;
+}
+header li:hover a
+{   
+    border-radius: 50px;
+    color: aliceblue;
+    background-color:rgb(0, 0, 0);
+    opacity: 0.8;
+}
+header li .search:focus
+{
+    background-color: rgb(200, 195, 184);
+}
+header li:hover input
+{
+    border: 1px solid black;
+    
+}
+header li
+{
+    float: left;
+}
+.logo   
+{   
+    position: absolute;
+    margin-left: 380px;
+    height: 130px;
+    width: 150px;
+    transition: 2s;
+}
+.logo:hover
+{
+    scale: 1.2;
+}
+.search
+{   
+    margin-left: 450px;
+}
+.section1
+{   
+    display: flex;
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    border-bottom: 1px solid black;
+}
+.sectionright
+{   
+    padding: 15px;
+    height: 100%;
+    width: 40%;
+}
+.sectionright_main
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+.sectionright img
+{
+    height: 60%;
+    width: 60%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.sectionright_main img:hover
+{
+    scale:1.3;
+    transition: 2s;
+}
+.sectionmiddle
+{
+    height: 100%;
+    width: 40%;
+}
+.sectionmiddle_top
+{   
+    border-bottom: 2px solid yellow;
+    width: 100%;
+    height: 25%;
+    padding: 15px;
+    font-size: 25px;
+}
+.sectionmiddle_topsecond
+{   
+    border-bottom: 2px solid yellow;
+    width: 100%;
+    height: 20%;
+    padding: 20px;
+    font-size: 20px;
+}
+.sectionmiddle_bottom
+{   
+    padding: 15px;
+    width: 100%;
+    height: 55%;
+    font-size: 18px;
+}
+.sectionmiddle_bottom ul
+{
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.sectionmiddle_bottom li
+{
+    margin-top: 8px;
+}
+.sectionleft
+{   
+    padding: 25px;
+    height: 100%;
+    width: 20%;
+}
+.sectionleft_main
+{   
+    margin-top: 50px;
+    padding: 15px;
+    height: 70%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+.sectionleft_main:hover
+{
+    scale:1.1;
+    transition: 1s;
+}
+.select
+{
+    margin: 25px 0px;
+}
+button
+{
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 15px;
+    height: 35px;
+    background-color: rgb(177, 173, 173);
+}
+#price, #stock
+{   
+    margin: 10px 0px;
+    font-size: 25px;
+}
+.seciton2
+{   
+    border-bottom: 1px solid black;
+    margin-top: 15px;
+    height: 600px;
+    width: 100%;
+}
+.information 
+{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    color: rgb(255, 89, 0);
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.information p
+{
+    text-decoration: 3px underline;
+}
+.details
+{   
+    display: flex;
+    height: 90%;
+    width: 100%;
+}
+.details_left
+{   
+    padding: 15px;
+    height: 100%;
+    width: 50%;
+}
+.technical
+{
+    height: 50px;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    padding: 9px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+.details_left td
+{   
+    text-align: center;
+    height: 35px;
+}
+tr:nth-child(even)
+{
+    background-color: rgb(162, 161, 160);
+}
+.details_right
+{
+    padding: 15px;
+    height: 100%;
+    width: 50%;
+}
+.additional
+{
+    height: 50px;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    padding: 9px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+.details_right td
+{   
+    text-align: center;
+    height: 35px;
+}
